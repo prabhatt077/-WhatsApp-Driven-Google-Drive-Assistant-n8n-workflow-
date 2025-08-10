@@ -56,7 +56,7 @@ The bot accepts **slash-style commands** via WhatsApp. Commands are **case-insen
 | **List files**  | `LIST /<FolderPath>`                            | `LIST /ProjectX`                     | Lists files in given folder          |
 | **Delete file** | `DELETE /<FolderPath>/<FileName>`               | `DELETE /ProjectX/report.pdf`        | Deletes file (requires confirmation) |
 | **Move file**   | `MOVE /<FolderPath>/<FileName> /<TargetFolder>` | `MOVE /ProjectX/report.pdf /Archive` | Moves file to another folder         |
-| **Summary**     | `SUMMARY /<FolderPath>`                         | `SUMMARY /LegalDocs`                 | Summarises each file’s contents      |
+| **Summary**     | `SUMMARY /<FolderPath>`                         | `SUMMARY /ProjectX`                  | Summarises each file’s contents      |
 
 **Delete Confirmation Flow:**
 
