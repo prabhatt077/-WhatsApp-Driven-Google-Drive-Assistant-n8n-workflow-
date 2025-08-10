@@ -67,4 +67,23 @@ CONFIRM DELETE /ProjectX/old.docx
 ```
 
 ---
+Here’s the updated section you can paste into your README so it clearly mentions the **DOCX parsing limitation** you faced during development:
+
+---
+
+## Known Limitations & Notes
+
+* **DOCX Summarisation**:
+  While the workflow supports summarising TXT and PDF files, the DOCX extractor node was **not available** in the current n8n instance during testing.
+
+  * If a DOCX file is requested for summary, the bot responds with:
+    `"DOCX summarisation is currently unavailable. Please convert to PDF or TXT."`
+  * This can be fixed by enabling or adding a DOCX text extraction node in n8n, or by integrating a custom JavaScript extraction function using libraries like [`mammoth`](https://github.com/mwilliamson/mammoth.js).
+
+* **Twilio Sandbox restriction**: Only numbers joined to the sandbox can send/receive messages.
+
+* **File size limit for summaries**: Very large files may be split or rejected due to OpenAI token limits.
+
+---
+
 
